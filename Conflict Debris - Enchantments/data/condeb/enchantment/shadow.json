@@ -1,0 +1,48 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.condeb.shadow",
+      "fallback": "Shadow"
+    },
+    "effects": {
+      "minecraft:crossbow_charging_sounds":[
+        {
+          "start":{
+            "sound_id": "item.crossbow.loading_start",
+            "range": 0
+          },
+          "mid":{
+            "sound_id": "item.crossbow.loading_middle",
+            "range": 0
+          },
+          "end":{
+            "sound_id": "item.crossbow.loading_end",
+            "range": 0
+          }
+        }
+      ],
+      "minecraft:projectile_spawned": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "condeb:enchantments/shadow"
+          }
+        }
+      ]
+    },
+    "exclusive_set": "minecraft:multishot",
+    "max_cost": {
+      "base": 25,
+      "per_level_above_first": 0
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 0
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "weight": 2
+  }

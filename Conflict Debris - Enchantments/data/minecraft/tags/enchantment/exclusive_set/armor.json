@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values":[
+        "condeb:magic_protection",
+        "condeb:status_resistance",
+        "condeb:dodge",
+        "condeb:deflect"
+    ]
+}

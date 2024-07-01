@@ -1,0 +1,36 @@
+{
+    "anvil_cost": 1,
+    "description": {
+      "translate": "enchantment.condeb.armored",
+      "fallback": "Armored"
+    },
+    "effects": {
+      "minecraft:attributes": [
+        {
+            "attribute": "minecraft:generic.armor",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 1,
+              "per_level_above_first": 1
+            },
+            "id": "condeb:enchantment.armored",
+            "operation": "add_value"
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 21,
+      "per_level_above_first": 11
+    },
+    "max_level": 5,
+    "min_cost": {
+      "base": 1,
+      "per_level_above_first": 11
+    },
+    "primary_items": "#minecraft:enchantable/armor",
+    "slots": [
+      "armor"
+    ],
+    "supported_items": "#minecraft:enchantable/equippable",
+    "weight": 4
+  }

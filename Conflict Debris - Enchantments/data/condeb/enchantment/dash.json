@@ -1,0 +1,40 @@
+{
+    "anvil_cost": 3,
+    "description": {
+      "translate": "enchantment.condeb.dash",
+      "fallback": "Dash"
+    },
+    "effects": {
+      "minecraft:post_attack": [
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "condeb:enchantments/dash"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "is_direct": true
+          }
+        }
+      }
+    ]
+    },
+    "primary_items": "#minecraft:enchantable/sword",
+    "max_cost": {
+      "base": 21,
+      "per_level_above_first": 11
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 1,
+      "per_level_above_first": 11
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#condeb:enchantable/attackable",
+    "weight": 2
+  }

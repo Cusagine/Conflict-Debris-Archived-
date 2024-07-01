@@ -1,0 +1,1 @@
+$summon minecraft:spectral_arrow ~ ~ ~ $(CondebArrowCache)
